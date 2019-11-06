@@ -16,7 +16,7 @@ set_random_seed(2)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
-batch_size = 32
+batch_size = 12
 
 #Prepare input data
 classes = os.listdir('train')
@@ -205,4 +205,4 @@ def train(num_iteration):
 
     total_iterations += num_iteration
 
-train(num_iteration=120)
+train(num_iteration=3000)
